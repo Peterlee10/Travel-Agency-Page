@@ -1,0 +1,333 @@
+@import url('https://fonts.googleapis.com/css2?family=Cookie&family=Open+Sans:ital@1&family=Sail&family=Sofia&display=swap');
+*{
+    margin: 0;
+    padding:0;
+    box-sizing: border-box;
+}
+body{
+    background-color: hsla(197, 44%, 26%, 0.8);
+    width: 100%;
+    height: 100vh;
+    color: rgb(239, 236, 236);
+    padding: 20px;
+}
+
+header nav{
+    display: flex;
+    justify-content: space-between;
+    height: 18vh;
+}
+header nav h1{
+    font-family: 'sail', cursive;
+    font-size: 65px;
+    color: hsl(199, 84%, 14%);
+    margin: 10px;
+}
+header nav ul {
+    display: flex;
+    margin: 10px;
+}
+header nav ul li{
+    margin: 0 8px;
+    padding: 8px 10px;
+    list-style: none;
+    font-size: 25px;
+    text-transform: uppercase;
+    border: 1px solid hsl(199, 76%, 16%);
+    border-radius: 3px;
+}
+header nav ul li a{
+    text-decoration: none;
+    color: rgb(239, 236, 236);
+}
+header nav ul li:hover{
+    background-color:hsla(197, 44%, 26%, 0.666);
+}
+.hero{
+    background-image: url("./images/plane\ wing\ 2.jpeg"); 
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    width: 97vw;
+    height: 1000px;
+    object-fit: fill;
+    margin-bottom: 15px;
+}
+.top-section{
+    display: flex;
+}
+
+.form{
+    width: 45%;
+    margin: 50px 10px 10px 50px ;
+    padding: 12px;
+    background-color: hsla(197, 44%, 26%, 0.8);
+    opacity: 0.8;
+    border-radius: 7px;
+    box-shadow: 1px black;
+    font-size: 25px;
+}
+.form h3{
+    margin-bottom: -4px;
+    font-size: 25px;
+}
+.details input{
+    height: 37px;
+    width: 80%;
+    margin: 1px 5px 3px 0px;
+    padding-left: 6px;
+    font-size: 21px;
+    margin-right: 20px;
+    border-radius: 4px;
+}
+.details{
+    display: flex;
+    flex-direction: column;
+    /* flex-wrap: wrap; */
+    /* align-items:center; */
+    /* margin-right: 10px; */
+    padding-right: 10px;
+    /* justify-content: space-between; */
+
+}
+.trip{
+    display: flex;
+    flex-direction: column;
+}
+
+.pet input{
+    width: 30px;
+    height: 20px;
+    margin-right: -3px;
+    margin-top: 5px;
+}
+
+form button{
+    height: 40px;
+    width: 40%;
+    font-size: 22px;
+    border-radius: 10px;
+    margin: 10px 0;
+}
+form button:hover{
+    background-color: transparent;
+    color: white;
+}
+.line{
+    height:3px;
+    width: 95%;
+    background-color: hsla(0, 0%, 1%, 0.666);
+    margin: 5px 0;
+} 
+.discount{
+    width: 45%;
+    margin: auto;
+    font-size: 1.5rem;
+    color: hsla(199, 44%, 26%, 0.8);
+}
+.countdown{
+    display: flex;
+    justify-content: space-between;
+}
+.discount h2{
+    font-size: 2.5rem;
+    margin-bottom: 30px;
+    line-height: 1;
+}
+
+
+/* Middle Section */
+.middle-section{
+    display: grid;
+    
+    grid-template-columns:repeat(3, 33%);
+    gap: 20px;
+    width: 99%;
+}
+
+.img-card{
+    width: 100%;
+    font-size: 28px;
+    text-align:left;
+    border-radius: 15px;
+    padding: 12px;
+    margin: auto 5px;
+    background-color: hsla(197, 44%, 26%, 0.666);
+}
+.image{
+    max-width: 100%;
+    object-fit: cover;
+    height: 20rem;
+    width: 100%;
+    margin: auto;
+    border-radius: 10px;
+}
+.booking{
+    color: rgb(239, 236, 236);
+}
+.booking:hover{
+    text-decoration: underline;
+}
+/* Footer */
+footer{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 40px;
+    font-weight: 200;
+    line-height: 2;
+    border: 1px solid black;
+    margin: 10px 0;
+    padding: 0 15px;
+    background-color: hsla(197, 44%, 26%, 0.666);
+    border-radius: 7px;
+}
+footer ul li{
+    list-style: none;
+}
+footer ul li a{
+    text-decoration: none;
+    color:rgb(239, 236, 236) ;
+}
+footer img{
+    height: 30px;
+    margin: 15px;
+}
+.socials{
+    display: flex;
+    align-items: center;
+    padding: 5px;
+}
+.footnote p{
+    font-size: 1.7rem;
+}
+.footnote a{
+    color:rgb(239, 236, 236) ;
+
+}
+
+@media screen and (min-width: 340px) and (max-width:480px) {
+    header nav{
+        display: flex;
+        flex-direction: column;
+        height: 15vh;
+    }
+    header nav h1{
+        font-family: 'sail', cursive;
+        font-size: 40px;
+        color: hsl(199, 84%, 14%);
+        margin: 10px;
+        text-align: center;
+    } 
+    header nav ul {
+        display: flex;
+        flex-direction: column;
+        margin: 5px;
+    }
+    header nav ul li{
+        margin: 3px;
+        padding: 5px;
+        list-style: none;
+        text-align: center;
+        font-size: 17px;
+        text-transform: uppercase;
+        border: 1px solid hsl(199, 76%, 16%);
+        border-radius: 3px;
+    }
+    .hero{
+        width: 97vw;
+
+        object-fit: fill;
+        margin-bottom: 15px;
+    }
+    .top-section{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .discount{
+        width: 80%;
+        margin: auto;
+        margin-top: 120px;
+        font-size: 0.6rem;
+        color: hsla(199, 44%, 26%, 0.8);
+    }
+    .discount h2{
+        font-size: 1.7rem;
+        margin-bottom: 15px;
+        line-height: 1;
+    }
+    .countdown{
+        display: flex;
+        justify-content: space-between;
+        margin: 5px 0;
+        font-size: 20px;
+    }
+    .form{
+        width: 85%;
+        height: 100%;
+        margin: 15px 10px 5px 30px ;
+        padding: 12px 12px 5px 12px;
+        background-color: hsla(197, 44%, 26%, 0.8);
+        opacity: 0.8;
+        border-radius: 7px;
+        box-shadow: 1px black;
+        font-size: 22px;
+    }
+    .details input{
+        height: 32px;
+        width: 100%;
+        margin: 1px 5px 1px 0px;
+        padding-left: 6px;
+        font-size: 21px;
+        margin-right: 20px;
+        border-radius: 4px;
+    }
+    .trip-date{
+        width: 90%;
+    }
+    .pet input{
+        width: 35px;
+        height: 15px;
+        margin-right: -5px;
+        margin-top: 5px;
+    }
+    
+    form button{
+        height: 35px;
+        width: 45%;
+        font-size: 22px;
+        border-radius: 10px;
+        margin: 5px 0;
+    }
+
+    /* middle */
+    .middle-section{
+        display: flex;
+        flex-direction: column;
+        width: 99%;
+    }
+    .img-card{
+        width: 100%;
+        font-size: 22px;
+        padding: 12px;
+    }
+    footer{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        font-size: 19px;
+        font-weight: 100;
+        line-height: 1.5;
+        border: 1px solid black;
+        margin: 10px 0;
+        padding: 0 8px;
+    }
+    footer img{
+        height: 15px;
+        margin: 0 8px;
+    }
+    .footnote p{
+        font-size: 1.4rem;
+        padding-bottom: 8px;
+    }
+}

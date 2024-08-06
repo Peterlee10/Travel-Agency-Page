@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Travel Agency</title>
+    <link rel="stylesheet" href="./index.css">
+    <script src="./script.js" defer></script>
+</head>
+<body>
+    <header>
+        <div class="hero">
+          <nav>
+            <h1>SOAR</h1>
+            <div class="nav-bar">
+              <ul>
+                <li><a href="#">Destinations</a></li>
+                <li><a href="#">Packages</a></li>
+                <li><a href="#">Bookings</a></li>
+                <li><a href="#">Contact</a></li>
+              </ul>
+            </div>
+          </nav>
+          <section class="top-section">
+              <div class="discount">
+                  <h2>
+                      Book a trip before 1st September, 2024 and get 30% discount off
+                      all trips...
+                  </h2>
+                  <div class="countdown">
+                      <div class="dayDiv">
+                          <h3 class="day">Time</h3>
+                          <h4>Days</h4>
+                      </div>
+                      <div class="hourDiv">
+                          <h3 class="hour">Time</h3>
+                          <h4>Hours</h4>
+                      </div>
+                      <div class="minuteDiv">
+                          <h3 class="minute">Time</h3>
+                          <h4>Minutes</h4>
+                      </div>
+                      <div class="secondDiv">
+                          <h3 class="second">Time</h3>
+                          <h4>Seconds</h4>
+                      </div>
+                  </div>    
+              </div>
+            <div class="form">
+              <form action="#">
+                <h3>Search for Flights</h3>
+                <div class="line"></div>
+                <input type="checkbox" name="one-way" />
+                <label for="one-way">One Way</label>
+                <input type="checkbox" name="return" />
+                <label for="return">Return</label>
+                <input type="checkbox" name="multi-city" />
+                <label for="one-way">Multi City</label>
+                <div class="line"></div>
+                <div class="details">
+                  <div class="trip">
+                    <label for="from">Flying from</label>
+                    <input type="text" name="from" />
+                  </div>
+                  <div class="trip">
+                    <label for="to">Flying to</label>
+                    <input type="text" name="to" />
+                  </div>
+                </div>
+                <div class="details">
+                  <div class="trip-date">
+                    <label for="departing">Departure date</label>
+                    <input type="date" name="departing" />
+                  </div>
+                  <div class="trip-date">
+                    <label for="arrival">Arrival date</label>
+                    <input type="date" name="arrival" />
+                  </div>
+                </div>
+                <div class="details">
+                  <div class="trip">
+                    <label for="adults">Adults(18+)</label>
+                    <input type="number" name="adults" />
+                  </div>
+                  <div class="trip">
+                    <label for="to">Children(0-17)</label>
+                    <input type="number" name="arrival" />
+                  </div>
+                </div>
+                <div class="pet">
+                  <input type="checkbox" name="pet" />
+                  <label for="pet">Pets</label>
+                </div>
+                <button type="submit" class="search">Search</button>
+              </form>
+            </div>
+          </section>
+        </div>
+    </header>
+        <main>
+            <section class="middle-section">
+            <div class="img-card">
+                <img
+                src="./images/Santorini.jpeg"
+                alt="hills of santorini"
+                class="image"
+                />
+                <h3>Santorini</h3>
+                <p>$1000</p>
+                <a href="#" class="booking">Book trip</a>
+            </div>
+            <div class="img-card">
+                <img
+                src="./images/Maldives.jpeg"
+                alt="huts on a river in Maldives"
+                class="image"
+                />
+                <h3>Maldives</h3>
+                <p>$1000</p>
+                <a href="#" class="booking">Book trip</a>
+            </div>
+            <div class="img-card">
+                <img
+                src="./images/London.jpeg"
+                alt="street in london"
+                class="image"
+                />
+                <h3>London</h3>
+                <p>$1000</p>
+                <a href="#" class="booking">Book trip</a>
+            </div>
+            <div class="img-card">
+                <img
+                src="./images/paris1.jpeg"
+                alt="eiffel tower in paris"
+                class="image"
+                />
+                <h3>Paris</h3>
+                <p>$1000</p>
+                <a href="#" class="booking">Book trip</a>
+            </div>
+            <div class="img-card">
+                <img
+                src="./images/Bali.jpeg"
+                alt="woman on swing in Bali"
+                class="image"
+                />
+                <h3>Bali</h3>
+                <p>$1000</p>
+                <a href="#" class="booking">Book trip</a>
+            </div>
+            <div class="img-card">
+                <img
+                src="./images/Taj Mahal.jpeg"
+                alt="pool in Mexico"
+                class="image"
+                />
+                <h3>India</h3>
+                <p>$1000</p>
+                <a href="#" class="booking">Book trip</a>
+            </div>
+            <div class="img-card">
+                <img src="images/dubai 2.jpeg" alt="desert safari" class="image" />
+                <h3>Dubai</h3>
+                <p>$1000</p>
+                <a href="#" class="booking">Book trip</a>
+            </div>
+            <div class="img-card">
+                <img src="images/Indonesia.jpeg" alt="indonesia" class="image" />
+                <h3>Indonesia</h3>
+                <p>$1000</p>
+                <a href="#" class="booking">Book trip</a>
+            </div>
+            <div class="img-card">
+                <img src="images/turkey.jpeg" alt="turkey" class="image" />
+                <h3>Turkey</h3>
+                <p>$1000</p>
+                <a href="#" class="booking">Book trip</a>
+            </div>
+            </section>
+            <footer>
+                <div class="ffooter">
+                <ul>
+                    <li><a href="about">About</a></li>
+                    <li><a href="blog">Blog</a></li>
+                    <li><a href="contact">Contact</a></li>
+                </ul>
+                </div>
+    
+                <div class="midfooter">
+                <ul>
+                    <li><a href="#">Travel Guide</a></li>
+                    <li><a href="#">Hotel Bookings</a></li>
+                    <li><a href="#">Places to visit</a></li>
+                </ul>
+                </div>
+    
+                <div class="lfooter">
+                <ul>
+                    <li class="socials">
+                    <img
+                        src="./images/instagram icon2.webp"
+                        alt="instagram-icon"
+                        class="icons"
+                    />
+                    <p>Instagram</p>
+                    </li>
+                    <li class="socials">
+                    <img
+                        src="./images/twitter icon2.webp"
+                        alt="twitter-icon"
+                        class="icons"
+                    />
+                    <p>Twitter</p>
+                    </li>
+                    <li class="socials">
+                    <img
+                        src="./images/linkedin icon.webp"
+                        alt="twitter-icon"
+                        class="icons"
+                    />
+                    <p>LinkedIn</p>
+                    </li>
+                </ul>
+                </div> 
+            </footer>
+        <div class="footnote">
+            <p>Check out my other works <a href="https://github.com/Peterlee10">here</a></p>
+            <p>&Peter_Lee   copy 2024</p>
+        </div>
+    </main>
+</body>
+</html>
